@@ -1,50 +1,31 @@
 <!DOCTYPE html>
-<!-- saved from url=(0123)https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-css-colors-by-building-a-set-of-colored-markers/step-94 -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!--<base href="">--><base href=".">
-  <style class="fcc-hide-header">
-    head *, title, meta, link, script {
-      display: none !important;
-    }
-  </style>
-  <script>
-    window.__frameId = 'fcc-test-frame';
-    window.onerror = function(msg) {
-      const string = msg.toLowerCase();
-      if (string.includes('script error')) {
-        msg = 'Build error, open your browser console to learn more.';
-      }
-      console.log(msg);
-      return true;
-    };
-    document.addEventListener('click', function(e) {
-      let element = e.target;
-      while(element && element.nodeName !== 'A') {
-        element = element.parentElement;
-      }
-      if (element && element.nodeName === 'A' && new URL(element.href).hash === '') {
-        e.preventDefault();
-        window.parent.window.alert(
-          i18nContent.t('misc.iframe-alert', { externalLink: element.href })
-        )
-      }
-      if (element) {
-        const href = element.getAttribute('href');
-        if (!href || href[0] !== '#' && !href.match(/^https?:\/\//)) {
-          e.preventDefault();
-        }
-      }
-    }, false);
-    document.addEventListener('submit', function(e) {
-      const action = e.target.getAttribute('action');
-      e.preventDefault();
-      if (action && action.match(/https?:\/\//)) {
-        window.parent.window.alert(
-          i18nContent.t('misc.iframe-form-submit-alert', { externalLink: action  })
-        )
-      }
-    }, false);
-  </script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Colored Markers</title><link rel="stylesheet" data-href="styles.css"><style class="fcc-injected-styles">h1 {
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colored Markers</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>CSS Color Markers</h1>
+    <div class="container">
+      <div class="marker red">
+        <div class="cap"></div>
+        <div class="sleeve"></div>
+      </div>
+      <div class="marker green">
+        <div class="cap"></div>
+        <div class="sleeve"></div>
+      </div>
+      <div class="marker blue">
+        <div class="cap"></div>
+        <div class="sleeve"></div>
+      </div>
+    </div>
+  </body>
+</html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Colored Markers</title><link rel="stylesheet" data-href="styles.css"><style class="fcc-injected-styles">
+h1 {
   text-align: center;
 }
 
@@ -84,32 +65,7 @@
   background: linear-gradient(#55680D, #71F53E, #116C31);
   box-shadow: 0 0 20px 0 #3B7E20CC;
 }
-
 .blue {
   background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
-  box-shadow: 0 0 20px 0 hsla(223,59%,31%,0.8);
+  box-shadow: 0 0 20px 0 blue;
 }
-</style></head>
-    
-    
-    
-    
-  
-  <body>
-    <h1>CSS Color Markers</h1>
-    <div class="container">
-      <div class="marker red">
-        <div class="cap"></div>
-        <div class="sleeve"></div>
-      </div>
-      <div class="marker green">
-        <div class="cap"></div>
-        <div class="sleeve"></div>
-      </div>
-      <div class="marker blue">
-        <div class="cap"></div>
-        <div class="sleeve"></div>
-      </div>
-    </div>
-  
-<script id="fcc-test-runner" src="./frame-runner-34bdf9d4720e879582d4.js.download" type="text/javascript"></script></body></html>
